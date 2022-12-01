@@ -1,0 +1,44 @@
+<!--Yuchen Jia: fetchResults function, URL and grabbing all the elements
+JiaTong Tan: HTML and display results function
+CSS done together, and some CSS are from class-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment 4: Using API | COMP1073 Client-Side JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/covidstats.css" rel="stylesheet" />
+    <script src="covidstats.js" defer></script>
+</head>
+
+<body>
+    <h1>U.S. Covid Statistics API Search</h1>
+    <p class="intro">API documentation: database from Rapid-API: <a
+            href="https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics/"> COVID-19 Statistics</a></p>
+    <div class="container">
+        <div class="searchInputs">
+            <form>
+                <p>
+                    <label for="citySearch">Enter a U.S city name (required): </label>
+                    <input type="text" id="city" class="city" required>
+                </p>
+                <p>
+                    <label for="dateSearch">Search date (YYYY-MM-DD): </label>
+                    <input type="date" id="date" class="date" pattern="[0-9]{8}">
+                </p>
+                <p>
+                    <button class="submit">Search</button>
+                </p>
+            </form>
+        </div>
+        <div class="results">
+            <section>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
